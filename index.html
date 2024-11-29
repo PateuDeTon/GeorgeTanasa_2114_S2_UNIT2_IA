@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Structură Rețea</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="header-container">
+        <div class="header">
+            <h1>George Tanasa</h1>
+        </div>
+        <p class="email">Tanasa.Io.George@student.utcluj.ro</p>
+    </div>
+
+    <div class="container">
+        <section class="specifications">
+            <h2>Specificații tehnice ale stației principale de lucru</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Denumire componentă</th>
+                        <th>Producător</th>
+                        <th>Parametri</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>AMD Ryzen 9 7845HX</td>
+                        <td>AMD</td>
+                        <td>12 nuclee, 24 fire de execuție</td>
+                    </tr>
+                    <tr>
+                        <td>16 GB RAM DDR5 5200 MHz</td>
+                        <td>Kingston</td>
+                        <td>CL40</td>
+                    </tr>
+                    <tr>
+                        <td>SS 1TB PCI Express</td>
+                        <td>Samsung</td>
+                        <td>970 EVO Plus</td>
+                    </tr>
+                    <tr>
+                        <td>Placă Video RTX 4070 8 GB VRAM</td>
+                        <td>NVIDIA</td>
+                        <td>8 GB GDDR6, Ray Tracing</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="network-structure">
+            <h2>Structura rețelei personale și accesul la internet</h2>
+            <div class="image-container" id="network_img">
+                <img src="network_diagram.png" alt="Structura Rețelei">
+            </div>
+            <div class="connection-details">
+                <h3>Caracteristicile conexiunii la rețea</h3>
+                <ul>
+                    <li>Adresa MAC: 10-7C-61-8F-BA-59</li>
+                    <li>Adresa IP: 192.168.1.2</li>
+                    <li>Debit la download: 496.61 Mbps</li>
+                    <li>Debit la upload: 496.88 Mbps</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="resource-monitoring" ondblclick="startSlideshow()">
+            <h2>Monitorizare resurse</h2>
+            <div id="resource-images">
+                <div class="arrow prev" onclick="changeImages('prev')">&#10094;</div>
+                <div class="images-container">
+                    <img src="screenshot1.png" alt="Screenshot 1">
+                    <img src="screenshot2.png" alt="Screenshot 2">
+                    <img src="screenshot3.png" alt="Screenshot 3">
+                </div>
+                <div class="arrow next" onclick="changeImages('next')">&#10095;</div>
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
